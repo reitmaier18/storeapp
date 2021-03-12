@@ -87,6 +87,7 @@ class users
                             '$this->user_password',
                             $this->role_id
                         )";
+        
         $this->id = $db->insert_query($query);
         if ($this->id) 
         {
